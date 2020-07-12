@@ -12,6 +12,9 @@
   }],
   "icons": {
     "48": "logo.png"
-  }
+  },
+  "web_accessible_resources":[
+    "*"
+  ]
 
 }
