@@ -3,18 +3,21 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('font.woff2') format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url('chrome-extension://__MSG_@@extension_id__/font.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }*/
 
-h1 {
+body h1 {
   font-weight: 400;
   font-size: 1.6em !important;
-  /*font-family: Roboto !important;*/
 }
 h2{
   font-weight: 400;
   font-size: 1.4em !important;
+}
+
+h3{
+  font-weight: 400;
 }
 
 div[style*='padding:10px; width:650px; border:thin solid darkred; margin:0px; background-color:#f8f9ed;'],
@@ -30,6 +33,7 @@ div[style*='padding:10px; width:650px; border:thin solid #f8f9ed; margin:0px; ba
 
 body{
   background-color: white !important;
+  overflow-x: hidden;
 }
 
 body #pageContainer{
@@ -82,7 +86,6 @@ body #pageTopNavi ul.nav.depth_2 li.depth_2 a:hover, body #pageTopNavi li.depth_
 }
 
 body #pageTopNavi{
-  /*background-image: url('tucan_logo.gif') !important;*/
   background-image: none !important;
   top: 60px;
   left: 30px;
@@ -100,12 +103,12 @@ body #pageHead{
 }
 
 body #pageContent{
-  padding-left: 60px;
+  padding-left: 50px;
   width: 75%;
 }
 
 body #pageLeft{
-  width: 210px;
+  width: 220px;
 }
 
 #cn_loginForm fieldset input{
