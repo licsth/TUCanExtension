@@ -4,3 +4,7 @@
 3. Turn on Developer mode (top right)
 4. "Add unpackaged extension"
 5. Choose repository folder
+
+# Attribution
+
+Icon by: https://icon-library.com/icon/toucan-icon-1.html.html>Toucan Icon # 145560
