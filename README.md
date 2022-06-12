@@ -1,9 +1,11 @@
 # Installation
-1. Download repository 
-2. Open [Chrome Extension Settings](chrome://extensions/)
-3. Turn on Developer mode (top right)
-4. "Add unpackaged extension"
-5. Choose repository folder
+
+1. Download repository
+2. Compile .scss files by running `sass --watch styles.scss:dist/styles.css`
+3. Open [Chrome Extension Settings](chrome://extensions/)
+4. Turn on Developer mode (top right)
+5. "Add unpackaged extension"
+6. Choose repository folder
 
 # Attribution
 
