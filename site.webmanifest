@@ -1,19 +1,45 @@
 {
     "name": "TuCan't",
     "short_name": "TuCan't",
+    "description": "Ein komisches Campus-Management-System.",
+    "start_url": "https://www.tucan.tu-darmstadt.de",
+    "id": "/",
+    "lang": "de-DE",
     "icons": [
         {
-            "src": "/android-chrome-192x192.png",
+            "src": "icon/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/android-chrome-256x256.png",
+            "src": "icon/android-chrome-256x256.png",
             "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "icon/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icon/favicon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "icon/favicon-32x32.png",
+            "sizes": "32x32",
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
+    "theme_color": "#f9b428",
     "background_color": "#ffffff",
-    "display": "standalone"
+    "display": "standalone",
+    "prefer_related_applications": true,
+    "related_applications": [
+        {
+        "platform": "play",
+        "id": "de.datenlotsen.campusnet.tuda"
+        }
+    ]
 }
