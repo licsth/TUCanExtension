@@ -7,4 +7,4 @@
 
 # Attribution
 
-Icon by: https://icon-library.com/icon/toucan-icon-1.html.html>Toucan Icon # 145560
+- Toucan icon by: https://icon-library.com/icon/toucan-icon-1.html.html      Toucan Icon # 145560
