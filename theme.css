@@ -74,8 +74,6 @@ body #pageTopNavi ul.nav.depth_2 li a,
 body #pageTopNavi ul.nav li a {
     background-color: var(--navigation-buttons-bg-color) !important;
     color: var(--navigation-buttons-fg-color) !important;
-    padding: 3px 5px !important;
-    border-radius: 2px;
 }
 
 table, tbody {

@@ -65,15 +65,17 @@ body #pageTopNavi ul.nav.depth_2 li.depth_2, body #pageTopNavi ul.nav.depth_2 li
   border: none !important;
 }
 
-body #pageTopNavi ul.nav.depth_2 li.depth_2 a{
-  padding: 9px;
+body #pageTopNavi ul.nav.depth_2 li.depth_2 a,
+body #pageTopNavi ul.nav li a {
+  padding: 9px !important;
   border-radius: 3px;
   margin-top: .5em;
   background-color: inherit !important;
   background-image: none !important;
 }
 
-body #pageTopNavi ul.nav.depth_2 li.depth_2 a:hover, body #pageTopNavi li.depth_2 a.navLink a:hover{
+body #pageTopNavi ul.nav.depth_2 li.depth_2 a:hover,
+body #pageTopNavi li.depth_2 a.navLink a:hover{
   background-color: #f7f7f7 !important;
   color: black !important;
   background-image: none !important;
