@@ -6,7 +6,7 @@
   "description": "Make TuCaN a little less ugly",
 
   "content_scripts": [{
-    "css": ["styles.css"],
+    "css": ["styles.css", "theme.css", "colors-dark-ocean.css"],
     "js": ["content.js", "finetunes.js"],
     "matches": ["https://www.tucan.tu-darmstadt.de/*"]
   }],

@@ -1,0 +1,128 @@
+body,
+body * {
+    color: var(--page-fg-color) !important;
+}
+
+body,
+input[type='text'],
+select,
+#inhalt,
+div[style*='background-color:#f8f9ed;'] /* dunno if need this line */
+div[style*='background-color:#ffffff;'] {
+    background-color: var(--page-bg-color) !important;
+}
+
+.sideOverlay {
+    background-color: var(--sidebar-bg-color) !important;
+}
+
+#pageHeadBottom_1,
+#pageHeadBottom_2,
+#pageHeadBottom_3 {
+    background-color: var(--header-bar-bg-color) !important;
+}
+
+div[style*='padding:10px;'] {
+    background-color: var(--alert-box-bg-color) !important;
+}
+
+body .img.img_arrowSubmit:hover,
+body .img.img_LangEnglish:hover,
+body .img.img_LangGerman:hover,
+body .img.img_arrowLogout:hover {
+    background-color: var(--header-buttons-hover-bg-color) !important;
+    color: var(--header-buttons-hover-fg-color) !important;
+}
+
+body .img.img_arrowSubmit,
+body .img.img_LangEnglish,
+body .img.img_LangGerman,
+body .img.img_arrowLogout {
+    background-color: var(--header-buttons-bg-color) !important;
+    color: var(--header-buttons-fg-color) !important;
+}
+
+body #pageFootControls a:hover {
+    background-color: var(--footer-buttons-hover-bg-color) !important;
+    color: var(--footer-buttons-hover-fg-color) !important;
+}
+
+
+body #pageFootControls a {
+    background-color: var(--footer-buttons-bg-color) !important;
+    color: var(--footer-buttons-fg-color) !important;
+}
+
+body td.tbtime11, body th.tbtime11, body td.tbtime01, body th.tbtime01 {
+    background-color: var(--time-table-row-color-1) !important;
+}
+
+body td.tbtime12, body th.tbtime12, body td.tbtime02, body th.tbtime02 {
+    background-color: var(--time-table-row-color-2) !important;
+}
+
+body #pageTopNavi ul.nav li a:hover,
+body #pageTopNavi ul.nav.depth_2 li.depth_2 a:hover,
+body #pageTopNavi li.depth_2 a.navLink a:hover,
+body #pageTopNavi li.depth_2 a.navLink a:hover {
+    background-color: var(--navigation-buttons-hover-bg-color) !important;
+    color: var(--navigation-buttons-hover-fg-color) !important;
+}
+
+body #pageTopNavi ul.nav.depth_2 li.depth_2 a,
+body #pageTopNavi ul.nav.depth_2 li a,
+body #pageTopNavi ul.nav li a {
+    background-color: var(--navigation-buttons-bg-color) !important;
+    color: var(--navigation-buttons-fg-color) !important;
+    padding: 3px 5px !important;
+    border-radius: 2px;
+}
+
+table, tbody {
+    background-color: var(--table-bg-color) !important;
+}
+
+caption,
+tr, th,
+th.rw-hide,
+.tbhead,
+.tbhead td,
+.tbcontrol,
+.tbsubhead,
+.tbsubhead th,
+.tbsubhead td,
+.tbdata {
+    background-color: var(--table-header-color) !important;
+}
+
+table, th, td, thead, tr, tbody {
+    border-color: var(--table-border-color) !important;
+}
+
+td.appointment {
+    background-color: var(--time-table-appointment-bg-color) !important;
+}
+
+td.appointment span, td.appointment a {
+    color: var(--time-table-appointment-fg-color) !important;
+}
+
+.level00, .level00 td, .level00 tr, .level00 th {
+    background-color: var(--performance-record-level0-bg-color) !important;
+}
+
+.level01, .level01 td, .level01 tr, .level01 th {
+    background-color: var(--performance-record-level1-bg-color) !important;
+}
+
+.level02, .level02 td, .level02 tr, .level02 th {
+    background-color: var(--performance-record-level2-bg-color) !important;
+}
+
+.level03, .level03 td, .level03 tr, .level03 th {
+    background-color: var(--performance-record-level3-bg-color) !important;
+}
+
+.level04, .level04 td, .level04 tr, .level04 th {
+    background-color: var(--performance-record-level4-bg-color) !important;
+}
