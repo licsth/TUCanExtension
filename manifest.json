@@ -7,7 +7,7 @@
 
   "content_scripts": [{
     "css": ["styles.css"],
-    "js": ["content.js"],
+    "js": ["content.js", "finetunes.js"],
     "matches": ["https://www.tucan.tu-darmstadt.de/*"]
   }],
   "icons": {

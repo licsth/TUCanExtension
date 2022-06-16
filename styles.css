@@ -159,3 +159,7 @@ body #pageTopNavi ul.nav.depth_1.linkItemContainer{
 body .tbhead{
   font-weight: 400;
 }
+
+#pageHeadLeft {
+  padding-top: 42px !important;
+}
