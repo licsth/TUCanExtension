@@ -191,3 +191,49 @@ body .tbhead {
 .img {
   background-image: none !important;
 }
+
+@media (prefers-color-scheme: dark) {
+  body,
+  body #inhalt {
+    h1,
+    strong {
+      color: $accent-color !important;
+    }
+
+    a {
+      background-color: inherit !important;
+    }
+    a:hover {
+      color: $accent-color !important;
+    }
+
+    * {
+      color: white !important;
+    }
+    background-color: #333 !important;
+
+    div[style*="padding:10px; width:650px; border:thin solid darkred; margin:0px; background-color:#f8f9ed;"],
+    div[style*="padding:10px; width:650px; border:thin solid darkred; margin:0px"],
+    div[style*="padding:10px; width:650px; border:thin solid #f8f9ed; margin:0px; background-color:#f8f9ed;"],
+    caption,
+    .tbhead,
+    .tbhead td {
+      background-color: #333 !important;
+    }
+
+    .tbcontrol,
+    .tbLeftCol,
+    tr,
+    .tbsubhead {
+      background-color: #555 !important;
+    }
+
+    .sideOverlay {
+      background-color: black;
+    }
+
+    #pageHeadBottom_3 {
+      background-color: black;
+    }
+  }
+}
