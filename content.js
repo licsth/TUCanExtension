@@ -22,15 +22,16 @@ addToHead(
     `<link rel="icon" type="image/png" sizes="16x16" href="${chrome.runtime.getURL(
       "icon/favicon-16x16.png"
     )}">` +
-    `<link rel="manifest" href="${chrome.runtime.getURL("site.manifest")}">` +
+    `<link rel="manifest" href="${chrome.runtime.getURL(
+      "site.webmanifest"
+    )}">` +
     `<link rel="mask-icon" href="${chrome.runtime.getURL(
       "icon/safari-pinned-tab.svg"
     )}" color="#5bbad5">` +
     `<meta name="apple-mobile-web-app-title" content="TuCan\'t">` +
     `<meta name="application-name" content="TuCan\'t">` +
     `<meta name="msapplication-TileColor" content="#5bbad5">` +
-    `<meta name="theme-color" content="#ffffff"></meta>` +
-    `<title>TUCan't</title>`
+    `<meta name="theme-color" content="#ffffff"></meta>`
 );
 
 function addToHead(html) {
