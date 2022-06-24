@@ -1,0 +1,52 @@
+@media (prefers-color-scheme: light) {
+
+  :root {
+    --dark: #0C1821;
+    --light: #f7f7f7;
+    --mid: #eeeeee;
+    --accent: #b1bd00;
+    --white: white;
+  }
+  :root {
+    --page-fg-color: var(--dark);
+    --page-bg-color: var(--white);
+    --sidebar-bg-color: var(--mid);
+    --header-bar-bg-color: var(--light);
+    --alert-box-bg-color: var(--light);
+    --logo-bg-color: var(--light);
+
+
+    --header-buttons-hover-bg-color: var(--light);
+    --header-buttons-hover-fg-color: var(--accent);
+    --header-buttons-bg-color: var(--light);
+    --header-buttons-fg-color: var(--page-fg-color);
+
+    --navigation-buttons-bg-color: var(--light);
+    --navigation-buttons-fg-color: var(--page-fg-color);
+    --navigation-buttons-hover-bg-color: var(--navigation-buttons-bg-color);
+    --navigation-buttons-hover-fg-color: var(--accent);
+
+    --footer-buttons-bg-color: transparent;
+    --footer-buttons-fg-color: var(--page-fg-color);
+    --footer-buttons-hover-bg-color: var(--light);
+    --footer-buttons-hover-fg-color: var(--accent);
+
+    --table-bg-color: var(--white);
+    --table-border-color: var(--white);
+    --table-header-color: var(--light);
+
+    --time-table-appointment-bg-color: var(--light);
+    --time-table-appointment-gf-color: black;
+    --time-table-row-color-1: var(--light);
+    --time-table-row-color-2: var(--dark);
+  /* 
+    /* should be dark as the text is always white here */
+    --performance-record-level0-bg-color: var(--light);
+
+    /* those should all be light as the text is always black here */
+    --performance-record-level1-bg-color: var(--light)
+    --performance-record-level2-bg-color: var(--light);
+    --performance-record-level3-bg-color: var(--light);
+    --performance-record-level4-bg-color: var(--light);
+  }
+}
