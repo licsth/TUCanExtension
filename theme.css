@@ -1,5 +1,6 @@
 body,
-body * {
+body *,
+td[class*="level"] {
   color: var(--page-fg-color) !important;
 }
 

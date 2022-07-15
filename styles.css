@@ -10,6 +10,10 @@
     U+FEFF, U+FFFD;
 }
 
+div[style*="background-color:#ffffff"] {
+  background-color: inherit !important;
+}
+
 * {
   font-family: "Open Sans" !important;
 }
