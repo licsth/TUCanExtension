@@ -1,7 +1,30 @@
 var nav = document.getElementsByClassName("nav");
 
+const storedTheme = localStorage.getItem("tucanTheme");
+
+let isDarkTheme;
+
+if (["light", "dark"].includes(storedTheme)) {
+  isDarkTheme = storedTheme === "dark";
+} else if (
+  window.matchMedia &&
+  window.matchMedia("(prefers-color-scheme: dark)").matches
+) {
+  isDarkTheme = true;
+} else {
+  isDarkTheme = false;
+}
+
+setTheme(isDarkTheme ? "dark" : "light");
+
 if (nav.length > 0) {
   var div = document.createElement("div");
+  div.innerHTML = `<label class="toggle">
+    <input type="checkbox" ${
+      isDarkTheme && "checked"
+    } onClick="window.dispatchEvent(new Event('toggleTheme'))">
+    <span class="slider"></span>
+  </label>`;
   div.classList = "sideOverlay";
   document.body.appendChild(div);
 }
@@ -44,4 +67,14 @@ function addToHead(html) {
   while (temp.firstChild) {
     head.appendChild(temp.firstChild);
   }
+}
+
+window.addEventListener("toggleTheme", () =>
+  setTheme(isDarkTheme ? "light" : "dark")
+);
+
+function setTheme(t) {
+  localStorage.setItem("tucanTheme", t);
+  document.body.classList.value = t;
+  isDarkTheme = t === "dark";
 }

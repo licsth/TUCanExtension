@@ -1,12 +1,11 @@
-@media (prefers-color-scheme: dark) {
-    :root {
+    .dark {
         --dark: #0C1821;
         --mid: #1B2A41;
         --light: #324A5F;
         --accent: #b1bd00;
         --white: rgb(227, 227, 227);
     }
-    :root {
+    .dark {
         --page-fg-color: var(--white);
         --page-bg-color: var(--dark);
         --sidebar-bg-color: var(--mid);
@@ -48,4 +47,3 @@
         --performance-record-level3-bg-color: var(--mid);
         --performance-record-level4-bg-color: var(--light);
     }
-}

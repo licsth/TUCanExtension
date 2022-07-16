@@ -11,7 +11,7 @@
 }
 
 div[style*="background-color:#ffffff"] {
-  background-color: inherit !important;
+  background-color: transparent !important;
 }
 
 * {
@@ -109,8 +109,9 @@ body #pageTopNavi {
 #pageHeadBottom_3 {
   border: none !important;
   background-color: #f7f7f7;
+  position: relative;
   padding: 9px;
-  z-index: 100;
+  z-index: 2;
 }
 
 body #pageHead {
@@ -165,13 +166,17 @@ body .img.img_arrowLogout {
 
 body #loginData {
   margin-top: 7px;
+  z-index: 3;
 }
 
 .sideOverlay {
   position: fixed;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
   left: 0;
   top: 0;
-  z-index: -100;
+  z-index: 1;
   width: 230px;
   height: 100vh;
 }
@@ -186,4 +191,54 @@ body .tbhead {
 
 #pageHeadLeft {
   padding-top: 42px !important;
+}
+
+.toggle {
+  --width: 60px;
+  --height: calc(var(--width) / 2.5);
+
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2em;
+  width: var(--width);
+  height: var(--height);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  border-radius: var(--height);
+  cursor: pointer;
+}
+
+.toggle input {
+  display: none;
+}
+
+.toggle .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--height);
+  background-color: #ccc;
+  transition: all 0.4s ease-in-out;
+}
+
+.toggle .slider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(var(--height));
+  height: calc(var(--height));
+  border-radius: calc(var(--height) / 2);
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease-in-out;
+}
+
+.toggle input:checked + .slider {
+  background-color: #0a6cbd;
+}
+
+.toggle input:checked + .slider::before {
+  transform: translateX(calc(var(--width) - var(--height)));
 }

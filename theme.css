@@ -4,6 +4,14 @@ td[class*="level"] {
   color: var(--page-fg-color) !important;
 }
 
+body.dark,
+body.light,
+body.dark *,
+body.light * {
+  transition: 0.15s linear;
+  transition-property: background-color, color;
+}
+
 body,
 input[type='text'],
 select,
