@@ -90,9 +90,8 @@ body #pageTopNavi ul.nav li a {
   color: var(--navigation-buttons-fg-color) !important;
 }
 
-table,
-tbody {
-  background-color: var(--table-bg-color) !important;
+table, tbody, .level03_color {
+    background-color: var(--table-bg-color) !important;
 }
 
 caption,
