@@ -2,22 +2,24 @@ var nav = document.getElementsByClassName("nav");
 
 const THEMES = [
   {
-    "key": "light",
-    "display": "Light"
-  }, 
-  {
-    "key": "dark-ocean",
-    "display": "Dark Ocean"
+    key: "light",
+    display: "Light",
   },
   {
-    "key": "dark-graphite",
-    "display": "Dark Graphite"
-  }
+    key: "dark-ocean",
+    display: "Dark Ocean",
+  },
+  {
+    key: "dark-graphite",
+    display: "Dark Graphite",
+  },
 ];
 
 const storedTheme = localStorage.getItem("tucanTheme");
 
-let prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
+let prefersDark =
+  window.matchMedia &&
+  window.matchMedia("(prefers-color-scheme: dark)").matches;
 
 let currentTheme = readTheme(prefersDark ? "dark-graphite" : "light");
 
@@ -56,19 +58,20 @@ addToHead(
     `<link rel="mask-icon" href="${chrome.runtime.getURL(
       "icon/safari-pinned-tab.svg"
     )}" color="#5bbad5">` +
-    `<meta name="apple-mobile-web-app-title" content="TuCan\'t">` +
-    `<meta name="application-name" content="TuCan\'t">` +
+    `<meta name="apple-mobile-web-app-title" content="TUCan\'t">` +
+    `<meta name="application-name" content="TUCan\'t">` +
     `<meta name="msapplication-TileColor" content="#5bbad5">` +
     `<meta name="theme-color" content="#ffffff"></meta>`
 );
 
-
 function createThemeOptions() {
-  let options = '';
+  let options = "";
   for (let theme of THEMES) {
-    options += `<option value="${theme.key}" ${currentTheme.key == theme.key && "selected" || ""}>${theme.display}</option>\n`;
+    options += `<option value="${theme.key}" ${
+      (currentTheme.key == theme.key && "selected") || ""
+    }>${theme.display}</option>\n`;
   }
-  return options
+  return options;
 }
 
 function addToHead(html) {
@@ -85,7 +88,7 @@ function addToHead(html) {
 
 window.addEventListener("changeTheme", () => {
   let value = document.getElementById("themeSelect").value;
-  let theme = THEMES.find(t => t.key == value);
+  let theme = THEMES.find((t) => t.key == value);
   transitionTheme(theme);
 });
 
@@ -104,7 +107,7 @@ function transitionTheme(t) {
 }
 
 function readTheme(defaultValue) {
-  if (THEMES.map(t => t.key).includes(storedTheme))
-    return THEMES.find(t => t.key == storedTheme);
-  return THEMES.find(t => t.key == defaultValue);
+  if (THEMES.map((t) => t.key).includes(storedTheme))
+    return THEMES.find((t) => t.key == storedTheme);
+  return THEMES.find((t) => t.key == defaultValue);
 }

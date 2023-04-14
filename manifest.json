@@ -3,7 +3,7 @@
 
   "name": "Deuglify",
   "version": "0.1.0",
-  "description": "Make TuCaN a little less ugly",
+  "description": "Make TUCaN a little less ugly",
 
   "content_scripts": [
     {
