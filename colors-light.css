@@ -34,10 +34,10 @@
     --table-border-color: var(--white);
     --table-header-color: var(--light);
 
-    --time-table-appointment-bg-color: var(--light);
+    --time-table-appointment-bg-color: #d7e052;
     --time-table-appointment-gf-color: black;
     --time-table-row-color-1: var(--light);
-    --time-table-row-color-2: var(--dark);
+    --time-table-row-color-2: var(--white);
   /* 
     /* should be dark as the text is always white here */
     --performance-record-level0-bg-color: var(--light);
