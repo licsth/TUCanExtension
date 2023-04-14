@@ -9,16 +9,16 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="145"
+   width="128"
    height="128"
-   viewBox="0 0 53.710422 47.413333"
+   viewBox="0 0 47.413338 47.413333"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
    sodipodi:docname="logo.svg"
    inkscape:export-filename="/home/jonas/forks/TUCanExtension/store-assets/logo.png"
-   inkscape:export-xdpi="4"
-   inkscape:export-ydpi="4">
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -29,8 +29,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.6"
-     inkscape:cx="78.83641"
-     inkscape:cy="50.134586"
+     inkscape:cx="49.46141"
+     inkscape:cy="64.4203"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -107,9 +107,16 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-263.13334)">
+    <rect
+       style="fill:#ffffff;fill-opacity:0.98491378;stroke:none;stroke-width:1.21100008;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect896"
+       width="55.29792"
+       height="51.792187"
+       x="-3.307292"
+       y="261.53262" />
     <g
        aria-label="L"
-       transform="matrix(0.34629337,0.34629337,-0.42081076,0.42081076,19.478684,254.79631)"
+       transform="matrix(0.34629337,0.34629337,-0.42081076,0.42081076,18.949517,254.79631)"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'Noto C';-inkscape-font-specification:'Noto C';letter-spacing:0.20999999px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        id="flowRoot815">
       <path
@@ -132,7 +139,7 @@
            y="7.0342326" /></flowRegion><flowPara
          id="flowPara829" /></flowRoot>    <g
        aria-label="J"
-       transform="matrix(0.44333025,0.44333025,-0.44333025,0.44333025,34.451904,259.9767)"
+       transform="matrix(0.44333025,0.44333025,-0.44333025,0.44333025,33.922737,259.9767)"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'Noto C';-inkscape-font-specification:'Noto C';letter-spacing:0.20999999px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        id="flowRoot815-5">
       <path
@@ -144,7 +151,7 @@
     </g>
     <path
        style="fill:#87de87;stroke:none;stroke-width:0.37041667px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 24.399018,273.53451 h 2.692035 l -7.292699,25.89566 -2.732729,0.004 z"
+       d="m 23.869851,273.53451 h 2.692035 l -7.292699,25.89566 -2.732729,0.004 z"
        id="path871"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
