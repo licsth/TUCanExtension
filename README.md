@@ -1,3 +1,8 @@
+
+<div align="center">
+<img src="https://socialify.git.ci/licsth/TUCanExtension/image?description=1&font=Jost&logo=https%3A%2F%2Fgithub.com%2Flicsth%2FTUCanExtension%2Fraw%2Fmaster%2Ficon%2Ftoucan-icon-1.png&name=1&owner=1&pattern=Brick%20Wall&theme=Auto" alt="TUCanExtension" width="640" height="320" />
+</div>
+
 # Installation
 
 1. Download repository
