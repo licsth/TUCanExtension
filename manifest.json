@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
 
   "name": "Deuglify",
   "version": "0.1.0",
@@ -22,5 +22,10 @@
   "icons": {
     "48": "icon/toucan-icon-1.png"
   },
-  "web_accessible_resources": ["*"]
+  "web_accessible_resources": [
+    {
+      "resources": ["*"],
+      "matches": ["https://www.tucan.tu-darmstadt.de/*"]
+    }
+  ]
 }
