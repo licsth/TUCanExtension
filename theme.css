@@ -4,11 +4,13 @@ td[class*="level"] {
   color: var(--page-fg-color) !important;
 }
 
-body.dark,
-body.light,
-body.dark *,
-body.light * {
-  transition: 0.15s linear;
+body.transition.dark-ocean,
+body.transition.dark-graphite,
+body.transition.light,
+body.transition.dark-ocean *,
+body.transition.dark-graphite *,
+body.transition.light * {
+  transition: 0.3s linear;
   transition-property: background-color, color;
 }
 

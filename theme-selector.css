@@ -1,0 +1,17 @@
+#themeSelect {
+  padding: 8px;
+  width: 170px;
+  border: none;
+  border-radius: 3px;
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+  margin-bottom: 20px;
+  transition: 0.3s linear;
+  transition-property: all;
+}
+
+#themeSelect:hover {
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    color: var(--accent) !important;
+}

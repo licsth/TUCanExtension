@@ -1,29 +1,34 @@
 var nav = document.getElementsByClassName("nav");
 
+const THEMES = [
+  {
+    "key": "light",
+    "display": "Light"
+  }, 
+  {
+    "key": "dark-ocean",
+    "display": "Dark Ocean"
+  },
+  {
+    "key": "dark-graphite",
+    "display": "Dark Graphite"
+  }
+];
+
 const storedTheme = localStorage.getItem("tucanTheme");
 
-let isDarkTheme;
+let prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
 
-if (["light", "dark"].includes(storedTheme)) {
-  isDarkTheme = storedTheme === "dark";
-} else if (
-  window.matchMedia &&
-  window.matchMedia("(prefers-color-scheme: dark)").matches
-) {
-  isDarkTheme = true;
-} else {
-  isDarkTheme = false;
-}
+let currentTheme = readTheme(prefersDark ? "dark-graphite" : "light");
 
-setTheme(isDarkTheme ? "dark" : "light");
+setTheme(currentTheme);
 
 if (nav.length > 0) {
   var div = document.createElement("div");
-  div.innerHTML = `<label class="toggle">
-    <input type="checkbox" ${
-      isDarkTheme && "checked"
-    } onClick="window.dispatchEvent(new Event('toggleTheme'))">
-    <span class="slider"></span>
+  div.innerHTML = `<label class="theme">
+    <select id="themeSelect" onChange="window.dispatchEvent(new Event('changeTheme'))">
+      ${createThemeOptions()}
+    </select>
   </label>`;
   div.classList = "sideOverlay";
   document.body.appendChild(div);
@@ -57,6 +62,15 @@ addToHead(
     `<meta name="theme-color" content="#ffffff"></meta>`
 );
 
+
+function createThemeOptions() {
+  let options = '';
+  for (let theme of THEMES) {
+    options += `<option value="${theme.key}" ${currentTheme.key == theme.key && "selected" || ""}>${theme.display}</option>\n`;
+  }
+  return options
+}
+
 function addToHead(html) {
   var temp = document.createElement("div");
 
@@ -69,12 +83,28 @@ function addToHead(html) {
   }
 }
 
-window.addEventListener("toggleTheme", () =>
-  setTheme(isDarkTheme ? "light" : "dark")
-);
+window.addEventListener("changeTheme", () => {
+  let value = document.getElementById("themeSelect").value;
+  let theme = THEMES.find(t => t.key == value);
+  transitionTheme(theme);
+});
 
 function setTheme(t) {
-  localStorage.setItem("tucanTheme", t);
-  document.body.classList.value = t;
-  isDarkTheme = t === "dark";
+  localStorage.setItem("tucanTheme", t.key);
+  document.body.classList.value = t.key;
+}
+
+function transitionTheme(t) {
+  localStorage.setItem("tucanTheme", t.key);
+  document.body.classList.value = [];
+  document.body.classList.add(t.key, "transition");
+  setTimeout(() => {
+    document.body.classList.value = t.key;
+  }, 500);
+}
+
+function readTheme(defaultValue) {
+  if (THEMES.map(t => t.key).includes(storedTheme))
+    return THEMES.find(t => t.key == storedTheme);
+  return THEMES.find(t => t.key == defaultValue);
 }

@@ -10,6 +10,8 @@
       "css": [
         "styles.css",
         "theme.css",
+        "theme-selector.css",
+        "colors-dark-graphite.css",
         "colors-dark-ocean.css",
         "colors-light.css"
       ],
