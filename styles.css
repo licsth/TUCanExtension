@@ -193,3 +193,8 @@ body .tbhead {
 #pageHeadLeft {
   padding-top: 42px !important;
 }
+
+input#field_user:focus,
+input#field_pass:focus {
+  outline: none !important;
+}
