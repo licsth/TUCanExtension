@@ -43,7 +43,7 @@
     --performance-record-level0-bg-color: var(--light);
 
     /* those should all be light as the text is always black here */
-    --performance-record-level1-bg-color: var(--light)
+    --performance-record-level1-bg-color: var(--light);
     --performance-record-level2-bg-color: var(--light);
     --performance-record-level3-bg-color: var(--light);
     --performance-record-level4-bg-color: var(--light);
