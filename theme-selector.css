@@ -15,3 +15,15 @@
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
     color: var(--accent) !important;
 }
+
+.themeSelectComment {
+  text-align: center;
+  padding-left: 8px;
+  width: 170px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  margin-bottom: 80px;
+  transition: 0.3s linear;
+  transition-property: all;
+}

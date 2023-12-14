@@ -13,7 +13,20 @@ const THEMES = [
     key: "dark-graphite",
     display: "Dark Graphite",
   },
+  {
+    key: "christmas",
+    display: "Christmas Special Theme",
+    onlyDisplayWhen: () => {
+      const nowTime = new Date();
+      return nowTime.getMonth() == 11 && // 11 = December, 0 = Janury
+        nowTime.getDate() < 25;
+    }
+  },
 ];
+
+function getAllowedThemes() {
+  return THEMES.filter((t) => t["onlyDisplayWhen"] == undefined || t.onlyDisplayWhen());
+}
 
 const storedTheme = localStorage.getItem("tucanTheme");
 
@@ -66,7 +79,7 @@ addToHead(
 
 function createThemeOptions() {
   let options = "";
-  for (let theme of THEMES) {
+  for (let theme of getAllowedThemes()) {
     options += `<option value="${theme.key}" ${
       (currentTheme.key == theme.key && "selected") || ""
     }>${theme.display}</option>\n`;
@@ -107,7 +120,7 @@ function transitionTheme(t) {
 }
 
 function readTheme(defaultValue) {
-  if (THEMES.map((t) => t.key).includes(storedTheme))
+  if (getAllowedThemes().map((t) => t.key).includes(storedTheme))
     return THEMES.find((t) => t.key == storedTheme);
   return THEMES.find((t) => t.key == defaultValue);
 }
