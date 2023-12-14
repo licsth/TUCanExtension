@@ -16,6 +16,9 @@ body.transition.light * {
 
 body,
 input[type='text'],
+/* the login fields orginally have rule with higher precendence than [type=text], */
+/* so we specify this here to overwrite the white background in the login form */
+#cn_loginForm fieldset input,
 select,
 #inhalt,
 div[style*='background-color:#f8f9ed;'] /* dunno if need this line */
